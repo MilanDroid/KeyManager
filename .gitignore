@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+vendor
+=======
+.idea/
+._.DS_Store
+.DS_Store
+vendor/
+._composer.phar
+composer.phar
+public/uploads
+>>>>>>> ee2a94eeb8bd37c2c4f077b39c741b5fe1ac5162
