@@ -18,7 +18,7 @@ require_once '../config/app.php';
 // ROUTE IS A VARIABLE LOADED ON CONFIG/APP.PHP
 // ELIMINAR ESTA PARTE DEBUGERCODE
 /*******************************/
-var_dump($_POST, $_SESSION);
+//var_dump($_POST, $_SESSION);
 /*******************************/
 if (!$route) {
     /*
@@ -39,13 +39,13 @@ if (!$route) {
     */
     // ELIMINAR ESTA PARTE DEBUGERCODE
     /*******************************/
-    var_dump($handlerData);
+    //var_dump($handlerData);
     /*******************************/
-    if(isset($handlerData['permissions'])){
+    if(isset($handlerData['permissions'])) {
         $load = $helper->getPass($handlerData['permissions']);
     }
 
-    if(!$load || (!isset($_SESSION['userId']['userData']['auth']) && $handlerData['auth'])){
+    if(!isset($_SESSION['userId']['auth']) && $handlerData['auth']) {
         /*
         IF THE PAGE NEEDS PEMISSIONS AND THE USER ISN'T LOGED
         RETURN THE LOGIN PAGE
@@ -53,16 +53,14 @@ if (!$route) {
         */
         $controllerName = 'App\Controllers\AuthController';
         $actionName = 'getLogin';
-    }
-    else if(!$load && $_SESSION['userId']['userData']['auth']){
+    } else if(!$load && $_SESSION['userId']['auth']) {
         /*
         HERE'S COME THE 'FORBIDDEN PAGE'
         CAN EDIT IT ON resources/views/nonAccess.twig
         */
         $controllerName = 'App\Controllers\ErrorController';
         $actionName = 'loadError403Page';
-    } 
-    else{
+    } else {
         /*
         HERE CALLS EVERY EXISTING PAGE
         TO LOAD VIEWS AND VARIABLES        
@@ -76,8 +74,7 @@ if (!$route) {
 $controller = new $controllerName;
 $response = $controller->$actionName($request);
 
-foreach($response->getHeaders() as $name => $values)
-{
+foreach($response->getHeaders() as $name => $values) {
     foreach($values as $value) {
         header(sprintf('%s: %s', $name, $value), false);
     }

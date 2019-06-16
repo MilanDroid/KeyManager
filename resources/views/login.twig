@@ -1,54 +1,65 @@
 {% extends "layout.twig" %}
 
 {% block content %}
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12" align="center">
-        <h1>Sign in</h1>
-      </div>
+<div class="container-fluid p-5">
+  <div class="container">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <form class="form-signin" action="/auth" method="post" onsubmit="return validateLogin();" align="center">
+        <div class="row">
+          <div class="col-lg-12" align="center">
+            <h1>Sign in</h1>
+          </div>
+        </div>
+        <div class="row" id="loginMessage" align="center">
+          <div class="col-lg-12">
+            <small id="loginHelp" class="text-danger">
+              {{ responseMessage }}
+            </small>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-lg-12" align="left">
+              <small class="form-text text-muted">Email</small>
+              <input type="text" class="form-control" name="email" id="email" placeholder="Enter email" required>
+            </div>
+          </div>
+          <div class="row" id="emailMessage">
+            <div class="col-lg-12">
+              <small id="emailHelp" class="text-danger">
+                Thats not a valid email.
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-12" align="left">
+              <small class="form-text text-muted">Password</small>
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+            </div>
+          </div>
+          <div class="row" id="passwordMessage">
+            <div class="col-lg-12">
+              <small id="passwordHelp" class="text-danger">
+                Must be contains a lowercase an uppercase and a number and be between 12 and 20 characters.
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-lg-12">
+              <input type="submit" class="btn btn-primary btn-lg btn-block" value="Login">
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-    <form action="/auth" method="post" onsubmit="return validateLogin();" align="center">
-      <div class="form-group">
-        <div class="row">
-          <div class="col-lg-12" align="left">
-            <small class="form-text text-muted">Email</small>
-            <input type="text" class="form-control" name="email" id="email" placeholder="Enter email" required>
-          </div>
-        </div>
-        <div class="row" id="emailMessage">
-          <div class="col-lg-12">
-            <small id="emailHelp" class="text-danger">
-              Thats not a valid email.
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="row">
-          <div class="col-12" align="left">
-            <small class="form-text text-muted">Password</small>
-            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
-          </div>
-        </div>
-        <div class="row" id="passwordMessage">
-          <div class="col-lg-12">
-            <small id="passwordHelp" class="text-danger">
-              Must be contains a lowercase an uppercase and a number and be between 12 and 20 characters.
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="row">
-          <div class="col-lg-12">
-            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Login">
-          </div>
-        </div>
-      </div>
-    </form>
   </div>
+</div>
 {% endblock %}
 
 {% block jsContent %}
-<script type="text/javascript" src="/resources/assets/js/login.js?t=1"></script>
+<script type="text/javascript" src="/resources/assets/js/login.js?t=2"></script>
 {% endblock %}

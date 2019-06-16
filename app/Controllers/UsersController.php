@@ -12,7 +12,7 @@ class UsersController extends BaseController {
     public function postSaveUser($request) {
         $postData = $request->getParsedBody();
 
-        // Validation here
+        // DATA VALIDATION
         $user = new User();
         $user->email = $postData['email'];
         $user->password = password_hash($postData['password'], PASSWORD_DEFAULT);

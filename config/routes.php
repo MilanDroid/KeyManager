@@ -8,18 +8,26 @@ $map->get('index', '/', [
 ]);
 $map->get('loginForm', '/login', [
     'controller' => 'App\Controllers\AuthController',
-    'action' => 'getLogin'
+    'action' => 'getLogin',
+    'auth' => false
 ]);
 $map->post('auth', '/auth', [
     'controller' => 'App\Controllers\AuthController',
-    'action' => 'postLogin'
+    'action' => 'postLogin',
+    'auth' => false
+]);
+$map->get('logout', '/logout', [
+    'controller' => 'App\Controllers\AuthController',
+    'action' => 'getLogout',
+    'auth' => true
 ]);
 $map->get('userDashboard', '/dashboard', [
     'controller' => 'App\Controllers\UserController',
     'action' => 'getDashBoard',
-    'permissions' => [
+    'auth' => true,
+    'permissions' => array(
         'level' => 3,
-    ]
+    )
 ]);
 
 //TEMPLATE ROUTES, DELETE LATER

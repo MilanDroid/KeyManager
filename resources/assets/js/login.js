@@ -5,10 +5,12 @@ function validateLogin(){
     var email = $('#email').val();
     var password = $('#password').val();
 
+    // If credentials are valid, then the next step is on backend
     if(email.match(regexEmail) && password.match(regexPassword)){
         return true;
     }
 
+    // If credentials are not valid, then change the class and return false
     if(!email.match(regexEmail)){
         $('#email').addClass('is-invalid');
         $('#emailMessage').show('hidden');
