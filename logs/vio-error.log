@@ -1,0 +1,142 @@
+[Sun Jun 16 22:14:40.136247 2019] [php7:notice] [pid 603] [client ::1:61423] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79
+[Sun Jun 16 22:14:40.136426 2019] [php7:notice] [pid 603] [client ::1:61423] PHP Stack trace:
+[Sun Jun 16 22:14:40.136456 2019] [php7:notice] [pid 603] [client ::1:61423] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sun Jun 16 22:14:40.136477 2019] [php7:notice] [pid 603] [client ::1:61423] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79
+[Sun Jun 16 22:14:40.522859 2019] [php7:notice] [pid 603] [client ::1:61423] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/
+[Sun Jun 16 22:14:40.522908 2019] [php7:notice] [pid 603] [client ::1:61423] PHP Stack trace:, referer: http://localhost/
+[Sun Jun 16 22:14:40.522937 2019] [php7:notice] [pid 603] [client ::1:61423] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/
+[Sun Jun 16 22:14:40.522985 2019] [php7:notice] [pid 603] [client ::1:61423] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/
+[Sun Jun 16 22:15:00.846549 2019] [php7:notice] [pid 604] [client ::1:61446] PHP Notice:  Trying to get property 'name' of non-object in /mnt/d/Developments/KeyManager/app/Controllers/AuthController.php on line 55, referer: http://localhost/
+[Sun Jun 16 22:15:00.846626 2019] [php7:notice] [pid 604] [client ::1:61446] PHP Stack trace:, referer: http://localhost/
+[Sun Jun 16 22:15:00.846652 2019] [php7:notice] [pid 604] [client ::1:61446] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/
+[Sun Jun 16 22:15:00.846674 2019] [php7:notice] [pid 604] [client ::1:61446] PHP   2. App\\Controllers\\AuthController->postLogin() /mnt/d/Developments/KeyManager/public/index.php:75, referer: http://localhost/
+[Sun Jun 16 22:15:00.849734 2019] [php7:notice] [pid 604] [client ::1:61446] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/
+[Sun Jun 16 22:15:00.849765 2019] [php7:notice] [pid 604] [client ::1:61446] PHP Stack trace:, referer: http://localhost/
+[Sun Jun 16 22:15:00.849787 2019] [php7:notice] [pid 604] [client ::1:61446] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/
+[Sun Jun 16 22:15:00.849807 2019] [php7:notice] [pid 604] [client ::1:61446] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/
+[Sun Jun 16 22:15:01.123506 2019] [php7:notice] [pid 604] [client ::1:61446] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/auth
+[Sun Jun 16 22:15:01.123550 2019] [php7:notice] [pid 604] [client ::1:61446] PHP Stack trace:, referer: http://localhost/auth
+[Sun Jun 16 22:15:01.123574 2019] [php7:notice] [pid 604] [client ::1:61446] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/auth
+[Sun Jun 16 22:15:01.123594 2019] [php7:notice] [pid 604] [client ::1:61446] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/auth
+[Sun Jun 16 22:15:21.470417 2019] [php7:notice] [pid 606] [client ::1:61465] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79
+[Sun Jun 16 22:15:21.470485 2019] [php7:notice] [pid 606] [client ::1:61465] PHP Stack trace:
+[Sun Jun 16 22:15:21.470574 2019] [php7:notice] [pid 606] [client ::1:61465] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sun Jun 16 22:15:21.470598 2019] [php7:notice] [pid 606] [client ::1:61465] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79
+[Sun Jun 16 22:15:22.072677 2019] [php7:notice] [pid 606] [client ::1:61465] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79
+[Sun Jun 16 22:15:22.072722 2019] [php7:notice] [pid 606] [client ::1:61465] PHP Stack trace:
+[Sun Jun 16 22:15:22.072744 2019] [php7:notice] [pid 606] [client ::1:61465] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sun Jun 16 22:15:22.072764 2019] [php7:notice] [pid 606] [client ::1:61465] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79
+[Sun Jun 16 22:15:22.331786 2019] [php7:notice] [pid 606] [client ::1:61465] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/logout
+[Sun Jun 16 22:15:22.331829 2019] [php7:notice] [pid 606] [client ::1:61465] PHP Stack trace:, referer: http://localhost/logout
+[Sun Jun 16 22:15:22.331852 2019] [php7:notice] [pid 606] [client ::1:61465] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sun Jun 16 22:15:22.331872 2019] [php7:notice] [pid 606] [client ::1:61465] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/logout
+[Sun Jun 16 22:15:34.492060 2019] [php7:notice] [pid 612] [client ::1:61479] PHP Notice:  Trying to get property 'name' of non-object in /mnt/d/Developments/KeyManager/app/Controllers/AuthController.php on line 55, referer: http://localhost/logout
+[Sun Jun 16 22:15:34.492137 2019] [php7:notice] [pid 612] [client ::1:61479] PHP Stack trace:, referer: http://localhost/logout
+[Sun Jun 16 22:15:34.492173 2019] [php7:notice] [pid 612] [client ::1:61479] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sun Jun 16 22:15:34.492204 2019] [php7:notice] [pid 612] [client ::1:61479] PHP   2. App\\Controllers\\AuthController->postLogin() /mnt/d/Developments/KeyManager/public/index.php:75, referer: http://localhost/logout
+[Sun Jun 16 22:15:34.496753 2019] [php7:notice] [pid 612] [client ::1:61479] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/logout
+[Sun Jun 16 22:15:34.496869 2019] [php7:notice] [pid 612] [client ::1:61479] PHP Stack trace:, referer: http://localhost/logout
+[Sun Jun 16 22:15:34.496909 2019] [php7:notice] [pid 612] [client ::1:61479] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sun Jun 16 22:15:34.496940 2019] [php7:notice] [pid 612] [client ::1:61479] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/logout
+[Sat Jul 13 22:20:58.194069 2019] [php7:notice] [pid 70] [client ::1:61373] PHP Notice:  Undefined index: items in /mnt/d/Developments/KeyManager/vendor/illuminate/support/Collection.php on line 2040, referer: http://localhost/login
+[Sat Jul 13 22:20:58.236691 2019] [php7:notice] [pid 70] [client ::1:61373] PHP Stack trace:, referer: http://localhost/login
+[Sat Jul 13 22:20:58.236810 2019] [php7:notice] [pid 70] [client ::1:61373] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/login
+[Sat Jul 13 22:20:58.236947 2019] [php7:notice] [pid 70] [client ::1:61373] PHP   2. App\\Controllers\\AuthController->postLogin() /mnt/d/Developments/KeyManager/public/index.php:75, referer: http://localhost/login
+[Sat Jul 13 22:20:58.247166 2019] [php7:notice] [pid 70] [client ::1:61373] PHP   3. Illuminate\\Database\\Eloquent\\Collection->offsetGet() /mnt/d/Developments/KeyManager/app/Controllers/AuthController.php:55, referer: http://localhost/login
+[Sat Jul 13 22:22:00.327708 2019] [php7:notice] [pid 195] [client ::1:61376] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/login
+[Sat Jul 13 22:22:00.327766 2019] [php7:notice] [pid 195] [client ::1:61376] PHP Stack trace:, referer: http://localhost/login
+[Sat Jul 13 22:22:00.327797 2019] [php7:notice] [pid 195] [client ::1:61376] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/login
+[Sat Jul 13 22:22:00.712825 2019] [php7:notice] [pid 195] [client ::1:61376] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/login
+[Sat Jul 13 22:22:00.712871 2019] [php7:notice] [pid 195] [client ::1:61376] PHP Stack trace:, referer: http://localhost/login
+[Sat Jul 13 22:22:00.712895 2019] [php7:notice] [pid 195] [client ::1:61376] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/login
+[Sat Jul 13 22:22:00.712915 2019] [php7:notice] [pid 195] [client ::1:61376] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/login
+[Sat Jul 13 22:22:01.033621 2019] [php7:notice] [pid 195] [client ::1:61376] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/
+[Sat Jul 13 22:22:01.033692 2019] [php7:notice] [pid 195] [client ::1:61376] PHP Stack trace:, referer: http://localhost/
+[Sat Jul 13 22:22:01.033717 2019] [php7:notice] [pid 195] [client ::1:61376] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/
+[Sat Jul 13 22:22:01.033738 2019] [php7:notice] [pid 195] [client ::1:61376] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/
+[Sat Jul 13 22:25:50.845495 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79
+[Sat Jul 13 22:25:50.845556 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Stack trace:
+[Sat Jul 13 22:25:50.845581 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:25:50.845601 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79
+[Sat Jul 13 22:25:51.239383 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/
+[Sat Jul 13 22:25:51.239490 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Stack trace:, referer: http://localhost/
+[Sat Jul 13 22:25:51.239518 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/
+[Sat Jul 13 22:25:51.239542 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/
+[Sat Jul 13 22:25:53.753805 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79
+[Sat Jul 13 22:25:53.753946 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Stack trace:
+[Sat Jul 13 22:25:53.753975 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:25:53.753996 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79
+[Sat Jul 13 22:25:54.089446 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79, referer: http://localhost/login
+[Sat Jul 13 22:25:54.089503 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Stack trace:, referer: http://localhost/login
+[Sat Jul 13 22:25:54.089526 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/login
+[Sat Jul 13 22:25:54.089546 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79, referer: http://localhost/login
+[Sat Jul 13 22:25:58.285494 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/d/Developments/KeyManager/public/index.php:21) in /mnt/d/Developments/KeyManager/public/index.php on line 79
+[Sat Jul 13 22:25:58.285538 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Stack trace:
+[Sat Jul 13 22:25:58.285560 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:25:58.285579 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   2. header() /mnt/d/Developments/KeyManager/public/index.php:79
+[Sat Jul 13 22:25:58.528340 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:25:58.528381 2019] [php7:notice] [pid 69] [client ::1:61542] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:25:58.528405 2019] [php7:notice] [pid 69] [client ::1:61542] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:26:07.408295 2019] [php7:notice] [pid 190] [client ::1:61544] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:26:07.408342 2019] [php7:notice] [pid 190] [client ::1:61544] PHP Stack trace:
+[Sat Jul 13 22:26:07.408373 2019] [php7:notice] [pid 190] [client ::1:61544] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:26:07.744843 2019] [php7:notice] [pid 190] [client ::1:61544] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:26:07.744889 2019] [php7:notice] [pid 190] [client ::1:61544] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:26:07.744912 2019] [php7:notice] [pid 190] [client ::1:61544] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:26:19.009217 2019] [php7:notice] [pid 71] [client ::1:61546] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:26:19.009272 2019] [php7:notice] [pid 71] [client ::1:61546] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:26:19.009299 2019] [php7:notice] [pid 71] [client ::1:61546] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:50:53.908675 2019] [php7:notice] [pid 71] [client ::1:61650] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:50:53.908807 2019] [php7:notice] [pid 71] [client ::1:61650] PHP Stack trace:
+[Sat Jul 13 22:50:53.908845 2019] [php7:notice] [pid 71] [client ::1:61650] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:50:54.117630 2019] [php7:notice] [pid 71] [client ::1:61650] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:50:54.118403 2019] [php7:notice] [pid 71] [client ::1:61650] PHP Stack trace:
+[Sat Jul 13 22:50:54.118449 2019] [php7:notice] [pid 71] [client ::1:61650] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:50:54.508463 2019] [php7:notice] [pid 71] [client ::1:61650] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:50:54.508505 2019] [php7:notice] [pid 71] [client ::1:61650] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:50:54.508528 2019] [php7:notice] [pid 71] [client ::1:61650] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:51:06.621298 2019] [php7:notice] [pid 70] [client ::1:61654] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:51:06.621346 2019] [php7:notice] [pid 70] [client ::1:61654] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:51:06.621372 2019] [php7:notice] [pid 70] [client ::1:61654] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:54:09.508836 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Notice:  Undefined index: tmp in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:54:09.508892 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Stack trace:
+[Sat Jul 13 22:54:09.508921 2019] [php7:notice] [pid 194] [client ::1:61660] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:54:09.615321 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:54:09.615362 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Stack trace:
+[Sat Jul 13 22:54:09.615385 2019] [php7:notice] [pid 194] [client ::1:61660] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:54:09.615430 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Notice:  Undefined index: tmp in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:54:09.615448 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Stack trace:
+[Sat Jul 13 22:54:09.615468 2019] [php7:notice] [pid 194] [client ::1:61660] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:54:09.958394 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:54:09.958480 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Stack trace:
+[Sat Jul 13 22:54:09.958511 2019] [php7:notice] [pid 194] [client ::1:61660] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:54:09.958570 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Notice:  Undefined index: tmp in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:54:09.958592 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Stack trace:
+[Sat Jul 13 22:54:09.958613 2019] [php7:notice] [pid 194] [client ::1:61660] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:54:10.248572 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:54:10.248616 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:54:10.248639 2019] [php7:notice] [pid 194] [client ::1:61660] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:54:10.248688 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Notice:  Undefined index: tmp in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:54:10.248711 2019] [php7:notice] [pid 194] [client ::1:61660] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:54:10.248731 2019] [php7:notice] [pid 194] [client ::1:61660] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.352108 2019] [php7:notice] [pid 192] [client ::1:61662] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.352162 2019] [php7:notice] [pid 192] [client ::1:61662] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.352187 2019] [php7:notice] [pid 192] [client ::1:61662] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.352266 2019] [php7:notice] [pid 192] [client ::1:61662] PHP Notice:  Undefined index: tmp in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.352286 2019] [php7:notice] [pid 192] [client ::1:61662] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.352306 2019] [php7:notice] [pid 192] [client ::1:61662] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.635060 2019] [php7:notice] [pid 192] [client ::1:61662] PHP Notice:  Undefined index: tmp in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.635101 2019] [php7:notice] [pid 192] [client ::1:61662] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:54:24.635125 2019] [php7:notice] [pid 192] [client ::1:61662] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:57:01.834951 2019] [php7:notice] [pid 71] [client ::1:61669] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:57:01.835004 2019] [php7:notice] [pid 71] [client ::1:61669] PHP Stack trace:
+[Sat Jul 13 22:57:01.835035 2019] [php7:notice] [pid 71] [client ::1:61669] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:57:02.276316 2019] [php7:notice] [pid 71] [client ::1:61669] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21
+[Sat Jul 13 22:57:02.276384 2019] [php7:notice] [pid 71] [client ::1:61669] PHP Stack trace:
+[Sat Jul 13 22:57:02.276411 2019] [php7:notice] [pid 71] [client ::1:61669] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0
+[Sat Jul 13 22:57:02.555058 2019] [php7:notice] [pid 71] [client ::1:61669] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:57:02.555100 2019] [php7:notice] [pid 71] [client ::1:61669] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:57:02.555123 2019] [php7:notice] [pid 71] [client ::1:61669] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout
+[Sat Jul 13 22:57:13.077178 2019] [php7:notice] [pid 195] [client ::1:61671] PHP Notice:  Undefined index: userId in /mnt/d/Developments/KeyManager/public/index.php on line 21, referer: http://localhost/logout
+[Sat Jul 13 22:57:13.077226 2019] [php7:notice] [pid 195] [client ::1:61671] PHP Stack trace:, referer: http://localhost/logout
+[Sat Jul 13 22:57:13.077249 2019] [php7:notice] [pid 195] [client ::1:61671] PHP   1. {main}() /mnt/d/Developments/KeyManager/public/index.php:0, referer: http://localhost/logout

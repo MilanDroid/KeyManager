@@ -18,7 +18,7 @@ require_once '../config/app.php';
 // ROUTE IS A VARIABLE LOADED ON CONFIG/APP.PHP
 // ELIMINAR ESTA PARTE DEBUGERCODE
 /*******************************/
-//var_dump($_POST, $_SESSION);
+var_dump($_POST, $_SESSION);
 /*******************************/
 if (!$route) {
     /*
@@ -42,7 +42,7 @@ if (!$route) {
     //var_dump($handlerData);
     /*******************************/
     if(isset($handlerData['permissions'])) {
-        $load = $helper->getPass($handlerData['permissions']);
+        $load = $helper->getPass($route->name, $handlerData['permissions']);
     }
 
     if(!isset($_SESSION['userId']['auth']) && $handlerData['auth']) {

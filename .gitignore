@@ -8,4 +8,5 @@ vendor/
 ._composer.phar
 composer.phar
 public/uploads
+logs
 >>>>>>> ee2a94eeb8bd37c2c4f077b39c741b5fe1ac5162

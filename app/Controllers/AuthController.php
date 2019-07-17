@@ -40,9 +40,21 @@ class AuthController extends BaseController {
                         'email' => $user->email,
                         'names' => $user->names,
                         'lastNames' => $user->last_names,
-                        'status' => $user->status
-                    )
+                        'status' => $user->status,
+                        'userType' => $user->user_type
+                    ),
+                    'permissions' => array()
                 ];
+
+                $permissions = User::select('users_permissions.level', 'users_permissions.permission_type', 'pages.name')
+                ->join('users_permissions', 'users.id', '=', 'users_permissions.user_id')
+                ->join('pages', 'pages.page_id', '=', 'users_permissions.page_id')
+                ->where('users.id', $user->id)
+                ->get()->toarray();
+
+                foreach ($permissions as $key=>$value){
+                    $_SESSION['userId']['permissions'][$value['name']][$value['permission_type']] = $value['level'];
+                }
 
                 return new RedirectResponse('/');
             } else {
@@ -60,7 +72,7 @@ class AuthController extends BaseController {
 
     public function getLogout() {
         // Droping the session user data
-        unset($_SESSION['userId']);
+        $_SESSION = array();
         return new RedirectResponse('/login');
     }
 }

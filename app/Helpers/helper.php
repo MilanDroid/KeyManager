@@ -3,22 +3,26 @@
 namespace App\Helpers;
 
 class Helper {
-   public function getPass($permissions) {
+   public function getPass($name, $permissions) {
 		// Starting the permissions on true
 		$response = true;
 
 		//  Checking all the permissions id and comparing with the existents user permissions
-		foreach ($permissions as $key => $value) {
-			// To prevent notices or warnings first we'll check if the permission exists on user permissions
-			if(isset($_SESSION['userId']['permissions'][$key])){
-				if($permissions[$key] != $_SESSION['userId']['permissions'][$key]) {
+		if(isset($_SESSION['userId']['permissions'][$name])){
+			foreach ($permissions as $key => $value) {
+				// To prevent notices or warnings first we'll check if the permission exists on user permissions
+				if(isset($_SESSION['userId']['permissions'][$name][$key])){
+					if( $permissions[$key] != $_SESSION['userId']['permissions'][$name][$key] && !in_array($_SESSION['userId']['permissions'][$name][$key], $permissions[$key])) {
+						$response = false;
+					}
+				} else {
 					$response = false;
 				}
-			} else {
-				$response = false;
 			}
+		} else {
+			$response = false;
 		}
-
+		
 		return $response;
 	}
 
